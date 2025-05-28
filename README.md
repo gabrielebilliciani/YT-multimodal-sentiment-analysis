@@ -57,7 +57,7 @@ Below is an overview of the main directories of the `/codebase` directory and th
         *   `deep_dives/`: In-depth synthesis reports for individual SaaS products.
 *   [`mongo-dumps/`](./mongo-dumps/): Contains MongoDB database exports for backup or migration purposes.
     *   `video_reviews.json`: Raw JSON dump of all analysed video review documents.
-    *   `db-dump-YYYY-MM-DD.zip`: Compressed full database dumps, named by export date.
+    *   `reviews_analysis_mongo.zip`: Compressed full database dump.
 
 ---
 

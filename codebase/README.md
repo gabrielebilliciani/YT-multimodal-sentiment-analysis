@@ -4,22 +4,7 @@ This directory contains the Python application for the YouTube Video Sentiment A
 
 ## Project Structure
 
-The codebase is organised as follows:
-
-*   [`main.py`](./main.py) - Main script to orchestrate the analysis process.
-*   [`config.py`](./config.py) - Configuration (API keys loaded from `.env`, target lists, DB path, Gemini prompts).
-*   [`.env.example`](./.env.example) - Template for the `.env` file (for API keys).
-*   *(You create)* `.env` - For storing your actual API keys (GIT-IGNORED).
-*   [`README.md`](./README.md) - This documentation file.
-*   [`.gitignore`](./.gitignore) - Specifies intentionally untracked files for Git.
-*   **`core/`** - Core business logic package:
-    *   [`core/__init__.py`](./core/__init__.py)
-    *   [`core/youtube_client.py`](./core/youtube_client.py) - Handles YouTube Data API v3 interactions.
-    *   [`core/gemini_client.py`](./core/gemini_client.py) - Handles Google Gemini API interactions.
-    *   [`core/database_manager.py`](./core/database_manager.py) - Manages SQLite database operations.
-*   **`utils/`** - Utility functions and configurations package (optional):
-    *   [`utils/__init__.py`](./utils/__init__.py)
-    *   [`utils/logging_config.py`](./utils/logging_config.py) - (Optional) Centralised logging setup.
+Full organisation is described in the main `README.md` file in the root directory of the repository. Below is a brief overview of the key components in this `codebase` directory:
 
 **Key Components:**
 
@@ -56,7 +41,11 @@ The codebase is organised as follows:
     *   `REVIEWER_CHANNELS` and `PRODUCTS_TO_ANALYZE`.
     *   `GEMINI_JSON_STRUCTURE_REQUEST` (the detailed JSON schema for Gemini).
 
-## Running the Application
+## Running the Application (phase 1)
+
+Ensure you are in the root directory of this repository, then navigate to the `codebase` directory:
+
+```bash
 
 From within this `codebase` directory, run the main script:
 
@@ -66,7 +55,9 @@ python main.py
 
 The script will process configured videos, analyse them using Gemini, and save results to the `reviews_analysis.db` SQLite database (or the name specified in `config.py`) located in this `codebase` directory. Console logs will show progress and any errors.
 
-For running the second part of the analysis, please use:
+## Running the Analysis (phase 2)
+
+In order to run the second part of the analysis, please use:
 
 ```
 python -m analysis.report_generator
