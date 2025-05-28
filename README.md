@@ -42,7 +42,7 @@ Below is an overview of the main directories of the `/codebase` directory and th
     *   [`database_manager.py`](./codebase/core/database_manager.py): Manages all operations related to the MongoDB database, including connection, data saving, and querying.
     *   [`gemini_client.py`](./codebase/core/gemini_client.py): Provides functions to interact with the Google Gemini API for relevance checking, multimodal video analysis, and synthesis tasks.
     *   [`youtube_client.py`](./codebase/core/youtube_client.py): Provides functions to interact with the YouTube Data API v3 for discovering videos.
-*   [`utils/`](./utils/): Contains utility modules used across the project.
+*   [`utils/`](./codebase/utils/): Contains utility modules used across the project.
     *   [`logging_config.py`](./codebase/utils/logging_config.py): Provides a centralized setup for application-wide logging.
     *   [`helpers.py`](./codebase/utils/helpers.py): (Currently empty) A placeholder for any general-purpose helper functions that might be developed.
 
