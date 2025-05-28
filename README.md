@@ -38,7 +38,7 @@ Below is an overview of the main directories of the `/codebase` directory and th
     *   [`prompts_saas.py`](./codebase/configs/prompts_saas.py): Contains specific Gemini prompt templates and JSON structure definitions for the tiered analysis of SaaS products.
     *   [`reviewer_lists.py`](./codebase/configs/reviewer_lists.py): Defines the `REVIEWER_CHANNELS` dictionary, listing curated YouTube channels for certain product categories.
     *   [`settings.py`](./codebase/configs/settings.py): Handles loading of environment variables (like API keys from a `.env` file), defines application modes (Test/Production), and sets default parameters for API calls.
-*   [`core/`](./core/): This sub-package contains core modules responsible for interacting with external APIs (YouTube, Gemini) and the database (MongoDB) during **Phase 1**.
+*   [`core/`](./codebase/core/): This sub-package contains core modules responsible for interacting with external APIs (YouTube, Gemini) and the database (MongoDB) during **Phase 1**.
     *   [`database_manager.py`](./codebase/core/database_manager.py): Manages all operations related to the MongoDB database, including connection, data saving, and querying.
     *   [`gemini_client.py`](./codebase/core/gemini_client.py): Provides functions to interact with the Google Gemini API for relevance checking, multimodal video analysis, and synthesis tasks.
     *   [`youtube_client.py`](./codebase/core/youtube_client.py): Provides functions to interact with the YouTube Data API v3 for discovering videos.
