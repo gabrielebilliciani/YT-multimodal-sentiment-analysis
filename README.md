@@ -32,7 +32,7 @@ Below is an overview of the main directories of the `/codebase` directory and th
     *   [`analysis_prompts.py`](./codebase/analysis/analysis_prompts.py): Stores the detailed Gemini prompt templates used for generating longitudinal and comparative analysis reports.
     *   [`data_loader.py`](./codebase/analysis/data_loader.py): Responsible for fetching and preparing the individual video analysis JSONs from the MongoDB database for input into Phase 2 synthesis.
     *   [`report_generator.py`](./codebase/analysis/report_generator.py): Manages the process of sending data to Gemini for synthesis and saving the resulting textual and structured JSON reports. It also includes a `if __name__ == '__main__':` block for standalone execution and testing of Phase 2.
-*   [`configs/`](./configs/): This sub-package holds all specific configuration files for the project, including API keys (via `.env`), product lists, reviewer lists, and AI prompt templates.
+*   [`configs/`](./codebase/configs/): This sub-package holds all specific configuration files for the project, including API keys (via `.env`), product lists, reviewer lists, and AI prompt templates.
     *   [`product_catalog.py`](./codebase/configs/product_catalog.py): Defines the `PRODUCTS_TO_ANALYZE` dictionary, detailing the products targeted by the system.
     *   [`prompts_consumer.py`](./codebase/configs/prompts_consumer.py): Contains specific Gemini prompt templates and JSON structure definitions for the analysis of consumer electronics.
     *   [`prompts_saas.py`](./codebase/configs/prompts_saas.py): Contains specific Gemini prompt templates and JSON structure definitions for the tiered analysis of SaaS products.
